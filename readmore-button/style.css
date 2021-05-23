@@ -1,0 +1,23 @@
+#more {
+    display: none;
+}
+
+.container{
+    color: white;
+    background-color: rgb(32, 32, 32);
+    padding:40px;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.container p {
+    font-size: 1rem;
+}
+
+#myBtn{
+    color: white;
+    background-color: rgb(17, 17, 17);
+    border: none;
+    font-size: 1rem;
+    padding: 20px 30px;
+}
