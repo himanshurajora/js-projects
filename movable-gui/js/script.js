@@ -2,17 +2,16 @@
 const object = document.getElementById("object");
 const boxes = document.querySelectorAll(".box");
 function dragOver(e) {
-    e.target.classList.add("over");
+    e.preventDefault();
 }
 function dragEnter(e) {
-    console.log("enter");
+    e.target.classList.add("over");
 }
 function dragLeave(e) {
-    console.log("leave");
     e.target.classList.remove("over");
 }
 function dragDrop(e) {
-    console.log("drop");
+    console.log(e.srcElement);
 }
 boxes.forEach(el => {
     el.addEventListener("dragover", dragOver);
