@@ -1,20 +1,23 @@
-import e from "cors"
-
 const object: any = document.getElementById("object") as HTMLElement
 const boxes:NodeList = document.querySelectorAll(".box") 
 
-function dragOver(){
-
+function dragOver(e:MouseEvent){
+    (e.target as HTMLElement).classList.add("over");
+    
 }
-function dragEnter(){
-
-}
-
-function dragLeave(){
+function dragEnter(e){
+    console.log("enter");
 
 }
 
-function dragDrop(){
+function dragLeave(e){
+    console.log("leave");
+    (e.target as HTMLElement).classList.remove("over");
+
+}
+
+function dragDrop(e){
+    console.log("drop");
 
 }
 

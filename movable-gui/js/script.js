@@ -1,14 +1,18 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const object = document.getElementById("object");
 const boxes = document.querySelectorAll(".box");
-function dragOver() {
+function dragOver(e) {
+    e.target.classList.add("over");
 }
-function dragEnter() {
+function dragEnter(e) {
+    console.log("enter");
 }
-function dragLeave() {
+function dragLeave(e) {
+    console.log("leave");
+    e.target.classList.remove("over");
 }
-function dragDrop() {
+function dragDrop(e) {
+    console.log("drop");
 }
 boxes.forEach(el => {
     el.addEventListener("dragover", dragOver);
