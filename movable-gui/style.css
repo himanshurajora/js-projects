@@ -10,3 +10,18 @@
     border-radius: 13px;
     margin: 30px 20px;
 }
+
+#object{
+    text-align: center;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 20px;
+    position: absolute;
+    cursor: grab;
+}
+
+.invisible{
+    display: none;
+}
+.visible{
+    display: block;
+}
